@@ -1,1 +1,64 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.stress-wrapper {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #eee1c9;
+}
+
+.stress-wrapper .details {
+  padding: 10px 0;
+}
+
+.stress-wrapper .details .eye-brow {
+  width: 200px;
+  height: 100px;
+  border: solid 10px #000;
+  border-color: transparent transparent #000 transparent;
+  border-radius: 0 0 240px 100%/60px;
+  -webkit-transform: rotate(150deg);
+          transform: rotate(150deg);
+  position: relative;
+  right: -60px;
+  top: 50px;
+}
+
+.stress-wrapper .details .face {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #ffc905;
+  right: -70px;
+}
+
+.stress-wrapper .pilar {
+  height: 100%;
+}
+
+.stress-wrapper .pilar img {
+  height: 100%;
+}
+/*# sourceMappingURL=main.css.map */

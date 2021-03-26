@@ -1,6 +1,8 @@
 // Colors
-$black: #000;
+$black: #1b1b1b;
 $main-bg: #eee1c9;
+$blue: #0268bd;
+$yellow: #ffc905;
 
 // Styles
 * {
@@ -21,26 +23,86 @@ body {
   display: flex;
   background-color: $main-bg;
   .details {
+    position: relative;
     padding: 10px 0;
 
     .eye-brow {
-      width: 200px;
       height: 100px;
       border: solid 10px #000;
       border-color: transparent transparent #000 transparent;
-      border-radius: 0 0 240px 100%/60px;
-      transform: rotate(150deg);
       position: relative;
-      right: -60px;
-      top: 50px;
+      right: -20px;
+      &--inner {
+        width: 195px;
+        transform: rotate(183deg);
+        top: 35px;
+        border-radius: 0 0 240px 100%/125px;
+      }
+      &--outer {
+        width: 200px;
+        transform: rotate(140deg);
+        top: 75px;
+        border-radius: 0 0 240px 100%/60px;
+      }
     }
     .face {
       position: relative;
       width: 300px;
       height: 300px;
       border-radius: 50%;
-      background-color: #ffc905;
+      background: $yellow;
       right: -70px;
+      .eye {
+        .eyelid {
+          height: 100px;
+          border: solid 10px #000;
+          border-color: transparent transparent #000 transparent;
+          position: relative;
+          right: -30px;
+          width: 163px;
+          border-radius: 0 0 240px 100%/125px;
+          top: -195px;
+
+          &--upper {
+            transform: rotate(183deg);
+            top: -38px;
+          }
+          &--lower {
+            transform: rotate(183deg) scale(-1);
+          }
+        }
+      }
+    }
+    .stress-veil {
+      width: 300px;
+      height: 149px;
+      background-color: #f37f7fa3;
+      border-top-left-radius: 146px;
+      border-top-right-radius: 146px;
+      border-bottom: 0;
+      position: absolute;
+      z-index: 1;
+      right: -72px;
+    }
+    .bubble {
+      &--blue {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: $blue;
+        position: absolute;
+        right: -13px;
+        bottom: 142px;
+      }
+      &--black {
+        background: $black;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        position: absolute;
+        right: -52px;
+        bottom: 15px;
+      }
     }
   }
   .pilar {

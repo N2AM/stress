@@ -8,7 +8,7 @@
 html,
 body {
   height: 100%;
-  background-color: #000;
+  background-color: #1b1b1b;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,20 +29,32 @@ body {
 }
 
 .stress-wrapper .details {
+  position: relative;
   padding: 10px 0;
 }
 
 .stress-wrapper .details .eye-brow {
-  width: 200px;
   height: 100px;
   border: solid 10px #000;
   border-color: transparent transparent #000 transparent;
-  border-radius: 0 0 240px 100%/60px;
-  -webkit-transform: rotate(150deg);
-          transform: rotate(150deg);
   position: relative;
-  right: -60px;
-  top: 50px;
+  right: -20px;
+}
+
+.stress-wrapper .details .eye-brow--inner {
+  width: 195px;
+  -webkit-transform: rotate(183deg);
+          transform: rotate(183deg);
+  top: 35px;
+  border-radius: 0 0 240px 100%/125px;
+}
+
+.stress-wrapper .details .eye-brow--outer {
+  width: 200px;
+  -webkit-transform: rotate(140deg);
+          transform: rotate(140deg);
+  top: 75px;
+  border-radius: 0 0 240px 100%/60px;
 }
 
 .stress-wrapper .details .face {
@@ -50,8 +62,62 @@ body {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background-color: #ffc905;
+  background: #ffc905;
   right: -70px;
+}
+
+.stress-wrapper .details .face .eye .eyelid {
+  height: 100px;
+  border: solid 10px #000;
+  border-color: transparent transparent #000 transparent;
+  position: relative;
+  right: -30px;
+  width: 163px;
+  border-radius: 0 0 240px 100%/125px;
+  top: -195px;
+}
+
+.stress-wrapper .details .face .eye .eyelid--upper {
+  -webkit-transform: rotate(183deg);
+          transform: rotate(183deg);
+  top: -38px;
+}
+
+.stress-wrapper .details .face .eye .eyelid--lower {
+  -webkit-transform: rotate(183deg) scale(-1);
+          transform: rotate(183deg) scale(-1);
+}
+
+.stress-wrapper .details .stress-veil {
+  width: 300px;
+  height: 149px;
+  background-color: #f37f7fa3;
+  border-top-left-radius: 146px;
+  border-top-right-radius: 146px;
+  border-bottom: 0;
+  position: absolute;
+  z-index: 1;
+  right: -72px;
+}
+
+.stress-wrapper .details .bubble--blue {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #0268bd;
+  position: absolute;
+  right: -13px;
+  bottom: 142px;
+}
+
+.stress-wrapper .details .bubble--black {
+  background: #1b1b1b;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  right: -52px;
+  bottom: 15px;
 }
 
 .stress-wrapper .pilar {
